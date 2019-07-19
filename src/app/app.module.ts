@@ -8,6 +8,7 @@ import {APP_CONFIG} from './app.config';
 import {TokenInterceptorService} from './services/interceptors/token-interceptor.service';
 import {ErrorInterceptorService} from './services/interceptors/error-interceptor.service';
 import {CommonHeadersInterceptorService} from './services/interceptors/common-headers-interceptor.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {CommonHeadersInterceptorService} from './services/interceptors/common-he
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {provide: APP_CONFIG, useValue: environment},
