@@ -12,11 +12,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app-routing.module';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
