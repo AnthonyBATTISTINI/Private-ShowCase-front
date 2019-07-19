@@ -9,10 +9,12 @@ import {TokenInterceptorService} from './services/interceptors/token-interceptor
 import {ErrorInterceptorService} from './services/interceptors/error-interceptor.service';
 import {CommonHeadersInterceptorService} from './services/interceptors/common-headers-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
