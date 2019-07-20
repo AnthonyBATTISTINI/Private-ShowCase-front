@@ -1,0 +1,24 @@
+.sign-buttons {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 13px;
+    right: 24px;
+    color: #ffffff;
+}
+
+.sign-buttons_button {
+    min-width: 0;
+    padding: 10px;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    font-size: 13.9px;
+}
+
+.sign-buttons_divider {
+    margin: 0;
+    font-weight: 500;
+    font-size: 13.9px;
+}

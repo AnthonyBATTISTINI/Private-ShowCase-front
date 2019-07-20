@@ -10,20 +10,24 @@ import { ErrorInterceptorService } from './services/interceptors/error-intercept
 import { CommonHeadersInterceptorService } from './services/interceptors/common-headers-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
+import { SignButtonsComponent } from './components/sign-buttons/sign-buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     HeaderComponent,
+    SignButtonsComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatButtonModule,
     RouterModule.forRoot(ROUTES),
   ],
   providers: [
