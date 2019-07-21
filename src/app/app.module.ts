@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { SignButtonsComponent } from './components/sign-buttons/sign-buttons.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SignButtonsComponent } from './components/sign-buttons/sign-buttons.com
     WelcomeComponent,
     HeaderComponent,
     SignButtonsComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,

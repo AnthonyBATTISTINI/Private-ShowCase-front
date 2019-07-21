@@ -1,6 +1,7 @@
 import {async, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
+import {RouterTestingModule} from '@angular/router/testing';
 import {APP_CONFIG} from './app.config';
 import {environment} from '../environments/environment';
 
@@ -12,6 +13,7 @@ describe('AppComponent', () => {
       ],
       imports: [
         HttpClientModule,
+        RouterTestingModule
       ],
       providers: [
         {provide: APP_CONFIG, useValue: environment},
