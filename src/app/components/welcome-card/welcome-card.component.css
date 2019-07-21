@@ -1,0 +1,35 @@
+.welcome-card {
+    width: 240px;
+    height: 264px;
+    padding: 12px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+    border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4) 5%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0));
+    border-image-slice: 1;
+    background-color: #b8b6b6;
+    color: #ffffff;
+}
+
+.welcome-card_img {
+    clip-path: ellipse(50% 50% at 50% 50%);
+    min-width: 163px;
+    min-height: 166px;
+    object-fit: contain;
+}
+
+.welcome-card_title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.welcome-card_subtitle {
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 0;
+}
