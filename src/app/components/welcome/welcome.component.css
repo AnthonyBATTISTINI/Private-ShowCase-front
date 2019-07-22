@@ -2,10 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px 0 56px;
+    padding: 32px 50px 56px;
     color: #ffffff;
-    width: 880px;
+    max-width: 980px;
     margin: 0 auto;
+}
+
+.welcome_sign-menu {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .welcome_sign-buttons {
+        display: none;
+    }
+    .welcome_sign-menu {
+        display: initial;
+    }
 }
 
 .welcome_title {
@@ -30,4 +43,11 @@
     align-items: center;
     width: 100%;
     margin-top: 40px;
+}
+
+@media (max-width: 850px) {
+    .welcome_cards {
+        flex-direction: column;
+        height: 840px;
+    }
 }

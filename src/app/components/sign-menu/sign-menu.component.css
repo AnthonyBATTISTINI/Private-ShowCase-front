@@ -1,0 +1,13 @@
+.sign-menu {
+    z-index: 2;
+    position: fixed;
+    top: 9px;
+    right: 24px;
+    color: #ffffff;
+}
+
+.sign-menu_button {
+    padding: 10px;
+    line-height: normal;
+    min-width: 0;
+}

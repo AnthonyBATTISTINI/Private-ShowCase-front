@@ -1,0 +1,9 @@
+<div class="sign-menu">
+  <mat-menu #menuSign="matMenu" yPosition="below" [overlapTrigger]="false">
+    <button mat-menu-item>Se connecter</button>
+    <button mat-menu-item>S'inscrire</button>
+  </mat-menu>
+  <button mat-icon-button class="sign-menu_button" [matMenuTriggerFor]="menuSign">
+    <mat-icon>account_box</mat-icon>
+  </button>
+</div>

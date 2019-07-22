@@ -11,12 +11,16 @@ import { CommonHeadersInterceptorService } from './services/interceptors/common-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { SignButtonsComponent } from './components/sign-buttons/sign-buttons.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { WelcomeCardComponent } from './components/welcome-card/welcome-card.component';
+import { SignMenuComponent } from './components/sign-menu/sign-menu.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +30,16 @@ import { WelcomeCardComponent } from './components/welcome-card/welcome-card.com
     SignButtonsComponent,
     BannerComponent,
     WelcomeCardComponent,
+    SignMenuComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatButtonToggleModule,
+    MatMenuModule,
+    MatIconModule,
     RouterModule.forRoot(ROUTES),
   ],
   providers: [
